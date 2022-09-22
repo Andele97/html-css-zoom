@@ -18,6 +18,36 @@ main {
 }
 
 footer {
-  height: 78px;
+  height: 80px;
   background-color: #222222;
+}
+
+/* MAIN */
+
+.profile {
+  width: 300px;
+  height: 200px;
+  background-color: blue;
+  position: relative;
+}
+
+.profile span {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.profile span::before {
+  font-family: "FontAwesome";
+  content: '\f131';
+}
+
+/* FOOTER */
+
+.menu {
+  width: calc(100% / 3);
+  height: 100%;
+  background-color: yellow;
+  float: right;
+  border: 1px solid;
 }

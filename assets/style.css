@@ -35,7 +35,12 @@ footer {
 }
 
 .active:active {
-  background-color: green
+  color: green;
+}
+
+.chevron {
+  font-family: "FontAwesome";
+  content: 'f077';
 }
 
 /* HEADER */
@@ -95,7 +100,6 @@ header span::before {
   width: calc(100% / 3);
   height: 100%;
   float: left;
-  border: 1px solid;
   display: flex;
   align-items: center;
 }
@@ -111,6 +115,13 @@ header span::before {
   color: white;
   margin-top: 10px;
   font-size: 1.3vh;
+}
+
+.box-chevron::before {
+  font-size: 1vh;
+  font-family: "FontAwesome";
+  content: '\f077';
+  color: white;
 }
 
 /* icon-footer */
@@ -161,6 +172,7 @@ header span::before {
   content: '\f14d';
   color: white;
   font-size: 3vh;
+  cursor: pointer;
 }
 
 .menu .chat::before {

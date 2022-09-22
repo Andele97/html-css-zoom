@@ -1,5 +1,23 @@
+/* GENERAL */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  height: 40px;
+  background-color: black;
+}
+
+main {
+  background-color: red;
+  height: calc(100vh - 118px);
+  overflow: auto;
+}
+
+footer {
+  height: 78px;
+  background-color: #222222;
 }

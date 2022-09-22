@@ -13,6 +13,9 @@ body {
 header {
   height: 40px;
   background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 main {
@@ -23,6 +26,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px 5px;
+  padding-top: 30px;
 }
 
 footer {
@@ -30,10 +34,37 @@ footer {
   background-color: #222222;
 }
 
+.active:active {
+  background-color: green
+}
+
+/* HEADER */
+
+header span {
+  color: white;
+  background-color: #4A4A4A;
+  padding: 5px;
+  border-radius: 5px;
+  height: 27px;
+  margin-right: 5px;
+}
+
+header span::before {
+  font-family: "FontAwesome";
+  content: '\f00a';
+  color: white;
+  padding-right: 5px;
+}
+
+.icon::before {
+  font-family: "FontAwesome";
+  content: '\f31e';
+  color: white;
+}
+
 /* MAIN */
 
 .profile {
-  margin-top: ;
   width: 300px;
   height: 200px;
   position: relative;
@@ -63,7 +94,117 @@ footer {
 .menu {
   width: calc(100% / 3);
   height: 100%;
-  background-color: yellow;
-  float: right;
+  float: left;
   border: 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+.menu .container-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.menu .text {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.3vh;
+}
+
+/* icon-footer */
+.menu .speaker::before {
+  font-family: "FontAwesome";
+  content: '\f130';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .cam::before {
+  font-family: "FontAwesome";
+  content: '\f03d';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .user::before {
+  font-family: "FontAwesome";
+  content: '\f234';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .users::before {
+  font-family: "FontAwesome";
+  content: '\f500';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .users::before {
+  font-family: "FontAwesome";
+  content: '\f500';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .poll::before {
+  font-family: "FontAwesome";
+  content: '\e0e3';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .share::before {
+  font-family: "FontAwesome";
+  content: '\f14d';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .chat::before {
+  font-family: "FontAwesome";
+  content: '\f075';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .record::before {
+  font-family: "FontAwesome";
+  content: '\f8d9';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .rooms::before {
+  font-family: "FontAwesome";
+  content: '\f009';
+  color: white;
+  font-size: 3vh;
+}
+
+.menu .dots::before {
+  font-family: "FontAwesome";
+  content: '\f141';
+  color: white;
+  font-size: 3vh;
+}
+/* /icon-footer */
+
+footer .menu .container-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .menu .close {
+  color: white;
+  background-color: #4A4A4A;
+  padding: 31px;
+  cursor: pointer;
+}
+
+footer .menu .close:hover {
+  color: red;
 }

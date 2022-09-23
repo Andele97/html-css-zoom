@@ -33,10 +33,6 @@ footer {
   background-color: #222222;
 }
 
-.active:active {
-  color: green;
-}
-
 /* HEADER */
 
 header span {
@@ -95,6 +91,7 @@ header span::before {
   float: left;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .menu .container-icon {
@@ -163,9 +160,8 @@ header span::before {
 .menu .share::before {
   font-family: "FontAwesome";
   content: '\f14d';
-  color: white;
+  color: rgb(46, 221, 46);
   font-size: 3vh;
-  cursor: pointer;
 }
 
 .menu .chat::before {

@@ -13,13 +13,12 @@ body {
 header {
   height: 40px;
   background-color: black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  padding: 10px;
+  text-align: right;
 }
 
 main {
-  background-color: red;
+  background-color: black;
   height: calc(100vh - 120px);
   overflow: auto;
   display: flex;
@@ -45,15 +44,14 @@ header span {
   background-color: #4A4A4A;
   padding: 5px;
   border-radius: 5px;
-  height: 27px;
-  margin-right: 5px;
+  cursor: pointer;
 }
 
 header span::before {
   font-family: "FontAwesome";
   content: '\f00a';
   color: white;
-  padding-right: 5px;
+  margin-right: 5px;
 }
 
 .icon::before {
